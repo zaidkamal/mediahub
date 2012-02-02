@@ -28,9 +28,9 @@ create table users(
   company_phone varchar(255) not null,
   company_website varchar(255) not null,
 
-  parent_client_id int not null references users(id),
+  parent_client_id int references users(id),
 
-  created_by int not null references users(id),
+  created_by int references users(id),
   created_at timestamp with time zone default current_timestamp
 );
 
