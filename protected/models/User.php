@@ -3,8 +3,8 @@ class User extends CActiveRecord {
   const ROLES = array('admin', 'main_client', 'sub_client');
   public $password;
   
-  public static function model() {
-    return parent::model(__CLASS__);
+  public static function model($className=__CLASS__) {
+    return parent::model($className);
   }
 
   public function tableName() {
@@ -24,7 +24,7 @@ class User extends CActiveRecord {
 
   public function relations() {
     return array(
-      'main_client' => array(self::BELONG_TO, 'User', 'parent_client_id'),
+      'main_client' => array(self::BELONGS_TO, 'User', 'parent_client_id'),
       'sub_clients' => array(self::HAS_MANY, 'User', 'parent_client_id'),
       'videos' => array(self::HAS_MANY, 'Video', 'user_id'),
       'ftp_profiles' => array(self::HAS_MANY, 'FtpProfile', 'user_id'),

@@ -3,8 +3,8 @@ class MetadataField extends CActiveRecord {
   const WIDGETS = array('text', 'textarea', 'radio_button', 'check_box', 'select', 'multi_select', 'file');
   const DATA_TYPES = array('alphanumeric', 'integer', 'decimal', 'year', 'url', 'email');
   
-  public static function model() {
-    return parent::model(__CLASS__);
+  public static function model($className=__CLASS__) {
+    return parent::model($className);
   }
 
   public function tableName() {

@@ -6,8 +6,8 @@ class Video extends CActiveRecord {
   const VOD_TYPES  = array('Library', 'New Release');
   const TRANSCODE_STATUS = array('queued', 'in_progress', 'post_progress', 'complete', 'failed', 'canceled');
   
-  public static function model() {
-    return parent::model(__CLASS__);
+  public static function model($className=__CLASS__) {
+    return parent::model($className);
   }
   
   public function tableName() {

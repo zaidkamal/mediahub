@@ -2,8 +2,8 @@
 class VideoAsset extends CActiveRecord {
   const TYPE = array('cover', 'trailer', 'picture', 'interview', 'making_of');
   
-  public static function model() {
-    return parent::model(__CLASS__);
+  public static function model($className=__CLASS__) {
+    return parent::model($className);
   }
 
   public function tableName() {

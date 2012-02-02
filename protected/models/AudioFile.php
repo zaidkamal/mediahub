@@ -4,8 +4,8 @@ class AudioFile extends CActiveRecord {
   const TYPES = array('mono', 'stereo', 'surround_5.1', 'surround_6.1', 'surround_7.1');
   const CHANNELS = array('l', 'r', 'l/r', 'lfe', 'c', 'ls', 'rs', 'cs', 'side_l', 'side_r', 'multi_channel', 'none');
   
-  public static function model() {
-    return parent::model(__CLASS__);
+  public static function model($className=__CLASS__) {
+    return parent::model($className);
   }
 
   public function tableName() {
