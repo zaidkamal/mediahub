@@ -31,4 +31,16 @@ class MetadataField extends CActiveRecord {
   public function has_preset_values() {
     return in_array($this->widget, array('radio_button', 'check_box', 'select', 'multi_select'));
   }
+  
+  protected function beforeDelete() {
+    foreach ($this->video_values as $value) {
+      $value->delete();
+    }
+    
+    if ($this->has_preset_values) {
+      foreach ($this->values as $value) {
+        $value->delete();
+      }
+    }
+  }
 }

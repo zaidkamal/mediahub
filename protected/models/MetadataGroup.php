@@ -20,4 +20,10 @@ class MetadataGroup extends CActiveRecord {
       'fields' => array(self::HAS_MANY, 'MetadataField', 'metadata_group_id')
     );
   }
+  
+  protected function beforeDelete() {
+    foreach ($this->fields as $field) {
+      $field->delete();
+    }
+  }
 }
