@@ -20,6 +20,7 @@ return array(
   
   'components' => array(
     'user'=>array(
+      'class' => 'WebUser',
       'allowAutoLogin' => true,
       'loginUrl' => array('session/create')
     ),

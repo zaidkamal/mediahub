@@ -12,6 +12,7 @@ class SessionController extends Controller {
   }
   
   public function actionDelete() {
-    Yii::app()->user->logout();
+    Yii::app()->user->logout(true);
+    $this->redirect(Yii::app()->getHomeUrl());
   }
 }
