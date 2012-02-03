@@ -1,10 +1,10 @@
 <?php
 class Video extends CActiveRecord {
-  const FORMATS    = array('SD', 'HD', '3D');
-  const CONTAINERS = array('mpeg', 'mpg', 'mp4', 'm4v', 'mov', 'avi', 'wmv');
-  const SUB_TYPES  = array('Feature', 'Concert');
-  const VOD_TYPES  = array('Library', 'New Release');
-  const TRANSCODE_STATUS = array('queued', 'in_progress', 'post_progress', 'complete', 'failed', 'canceled');
+  private static $FORMATS    = array('SD', 'HD', '3D');
+  private static $CONTAINERS = array('mpeg', 'mpg', 'mp4', 'm4v', 'mov', 'avi', 'wmv');
+  private static $SUB_TYPES  = array('Feature', 'Concert');
+  private static $VOD_TYPES  = array('Library', 'New Release');
+  private static $TRANSCODE_STATUS = array('queued', 'in_progress', 'post_progress', 'complete', 'failed', 'canceled');
   
   public static function model($className=__CLASS__) {
     return parent::model($className);
@@ -35,9 +35,5 @@ class Video extends CActiveRecord {
       'assets' => array(self::HAS_MANY, 'VideoAsset', 'video_id'),
       'audio_files' => array(self::HAS_MANY, 'AudioFile', 'video_id')
     );
-  }
-  
-  public function create_asset_package() {
-    $name = "${this->id}_${this->title}_${this->user->id}_${this->uploaded_at}";
   }
 }

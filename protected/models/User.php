@@ -1,6 +1,6 @@
 <?php
 class User extends CActiveRecord {
-  const ROLES = array('admin', 'main_client', 'sub_client');
+  private static $ROLES = array('admin', 'main_client', 'sub_client');
   public $password;
   
   public static function model($className=__CLASS__) {

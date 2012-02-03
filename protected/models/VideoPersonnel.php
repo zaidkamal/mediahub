@@ -1,6 +1,6 @@
 <?php
 class VideoPersonnel extends CActiveRecord {
-  const OCCUPATION = array('director', 'producer', 'actor', 'cast', 'screen_writer');
+  private static $OCCUPATION = array('director', 'producer', 'actor', 'cast', 'screen_writer');
   
   public static function model($className=__CLASS__) {
     return parent::model($className);

@@ -1,8 +1,8 @@
 <?php
 class AudioFile extends CActiveRecord {
-  const MIXES = array('tv_mix', 'cinema_mix', 'music_&_effects', 'ambiance_only');
-  const TYPES = array('mono', 'stereo', 'surround_5.1', 'surround_6.1', 'surround_7.1');
-  const CHANNELS = array('l', 'r', 'l/r', 'lfe', 'c', 'ls', 'rs', 'cs', 'side_l', 'side_r', 'multi_channel', 'none');
+  private static $MIXES = array('tv_mix', 'cinema_mix', 'music_&_effects', 'ambiance_only');
+  private static $TYPES = array('mono', 'stereo', 'surround_5.1', 'surround_6.1', 'surround_7.1');
+  private static $CHANNELS = array('l', 'r', 'l/r', 'lfe', 'c', 'ls', 'rs', 'cs', 'side_l', 'side_r', 'multi_channel', 'none');
   
   public static function model($className=__CLASS__) {
     return parent::model($className);
