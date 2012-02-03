@@ -22,9 +22,9 @@ class VideoMetadataValue extends CActiveRecord {
 
   public function relations() {
     return array(
-      'video' => array(self::BELONG_TO, 'Video', 'video_id'),
-      'meta_field' => array(self::BELONG_TO, 'MetadataField', 'metadata_field_id'),
-      'meta_field_value' => array(self::BELONG_TO, 'MetadataFieldValue', 'metadata_field_value_id')
+      'video' => array(self::BELONGS_TO, 'Video', 'video_id'),
+      'meta_field' => array(self::BELONGS_TO, 'MetadataField', 'metadata_field_id'),
+      'meta_field_value' => array(self::BELONGS_TO, 'MetadataFieldValue', 'metadata_field_value_id')
     );
   }
   

@@ -16,7 +16,7 @@ class MetadataFieldValue extends CActiveRecord {
 
   public function relations() {
     return array(
-      'field' => array(self::BELONG_TO, 'Metadatafield', 'metadata_field_id')
+      'field' => array(self::BELONGS_TO, 'Metadatafield', 'metadata_field_id')
     );
   }
 }

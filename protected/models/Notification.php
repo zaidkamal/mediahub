@@ -16,7 +16,7 @@ class Notification extends CActiveRecord {
 
   public function relations() {
     return array(
-      'video' => array(self::BELONG_TO, 'Video', 'video_id')
+      'video' => array(self::BELONGS_TO, 'Video', 'video_id')
     );
   }
 }

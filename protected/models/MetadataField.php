@@ -22,8 +22,9 @@ class MetadataField extends CActiveRecord {
 
   public function relations() {
     return array(
-      'group' => array(self::BELONG_TO, 'MetadataGroup', 'metadata_group_id'),
-      'values' => array(self::HAS_MANY, 'MetadataFieldValue', 'metadata_field_id')
+      'group' => array(self::BELONGS_TO, 'MetadataGroup', 'metadata_group_id'),
+      'values' => array(self::HAS_MANY, 'MetadataFieldValue', 'metadata_field_id'),
+      'video_values' => array(self::HAS_MANY, 'VideoMetadataValues', 'metadata_field_id')
     );
   }
   

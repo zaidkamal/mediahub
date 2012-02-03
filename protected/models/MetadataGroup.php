@@ -16,7 +16,7 @@ class MetadataGroup extends CActiveRecord {
 
   public function relations() {
     return array(
-      'user' => array(self::BELONG_TO, 'User', 'user_id'),
+      'user' => array(self::BELONGS_TO, 'User', 'user_id'),
       'fields' => array(self::HAS_MANY, 'MetadataField', 'metadata_group_id')
     );
   }
