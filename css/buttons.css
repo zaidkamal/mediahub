@@ -1,0 +1,22 @@
+.actionsbt{
+	padding:20px 10px;
+} 
+.button{
+	border:0;
+	font-weight:bold;
+	display:inline-block;
+	*zoom:1;
+	text-align:center;
+	text-decoration:none;
+	width:130px;
+}
+.button:hover{
+	cursor: pointer;		
+}
+.button.disable, .button.disable:hover{
+	cursor:none;
+	pointer-events: none;
+}
+.mini{
+	width:25px;
+}

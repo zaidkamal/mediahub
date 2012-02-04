@@ -1,0 +1,10 @@
+.paginate{
+	margin-top:10px;
+	padding:0 10px;
+} 
+.paginate a.grayed{
+	pointer-events: none;
+}
+.paginate a.current{
+	font-weight:bold;
+}

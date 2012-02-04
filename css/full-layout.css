@@ -1,0 +1,32 @@
+body{
+	margin:0;
+	padding:0;
+} 
+#page{
+	width:960px;
+	margin: 0 auto;
+}
+#header{
+	height:65px;
+	padding:10px;
+}
+#pagecontainer{
+	padding:10px;
+	height:545px;
+}
+
+#main-area{
+	padding:0 5px;
+	/*height:511px;*/
+	width:722px;
+	overflow:hidden;
+}
+#side-bar{
+	width:185px;
+	padding:0 10px;
+	height:466px;
+}
+#footer{
+	height:35px;
+	padding:20px;
+}

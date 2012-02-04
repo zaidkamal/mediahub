@@ -1,0 +1,24 @@
+.bol{
+	float:left;
+} 
+.bold{
+	font-weight:bold;
+}
+.clear{
+	clear: both;
+}
+.eol{
+	float:right;
+}
+.hidden{
+	display:none;
+}
+.inline-block{
+	display:inline-block;
+	*zoom:1;
+}
+.rborder{
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}

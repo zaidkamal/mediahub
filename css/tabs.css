@@ -1,0 +1,107 @@
+#tabs{
+	height:34px;
+} 
+.tab{
+	text-align:center;
+	width:171px;
+	padding:7px 0;
+	text-decoration:none;
+}
+.ltr .tab{
+	margin-right:17px;
+}
+.rtl .tab{
+	margin-left:10px;
+}
+.last{
+	width:172px;
+}
+.ltr .tab.last{
+	margin-right: 0;
+	margin-left:0;
+}
+.current-tab{
+}
+#status{
+}
+.inner-tab{
+	margin-right: 3px;
+	margin-top:7px;
+}
+.switcher .inner-tab:hover{
+	cursor: pointer;
+}
+.inner-tab.current{
+	height:25px;
+	margin-top:3px;
+}
+
+/* scrollable root element */
+#sub-tab {	
+	height:405px;
+	margin:10px auto;	
+	overflow:hidden;
+	position:relative;
+}
+
+/* scrollable items */
+#sub-tab .items {
+	width:722px;	
+	clear:both;	
+  height:380px;
+	position:absolute;	
+  overflow:hidden;
+}
+
+/* single item */
+#sub-tab .page {	
+	padding:20px 24px;
+	width:670px;
+  height:380px;
+	float:left;	
+}
+/* input fields */
+#sub-tab ul {
+	padding:0px !important;
+	margin:0px !important;
+}
+
+#sub-tab .error {
+	border:1px solid red;		
+}
+
+#sub-tab #status {
+	height:33px;
+  width:1140px;
+  position:relative;
+  left:0;
+}
+
+#status li {
+	list-style-type:none;
+	list-style-image:none;
+	float:left;
+	padding:3px 35px;
+  margin:6px 3px 6px 0;
+}
+
+#status li.active {
+	font-weight:normal;		
+}
+.status-sub-menu{
+  height:30px;
+}
+#sub-tab .has-sub .page{
+  padding:0;
+  width:930px;
+}
+#sub-tab .items.has-sub{
+  width:935px;
+}
+.status-sub-menu a{
+  margin:0 10px;
+  text-decoration:none;
+}
+.status-sub-menu a.current{
+  text-decoration:underline;
+}

@@ -1,0 +1,131 @@
+/*  DARK GRAY COLOR */
+body{
+	background-color:#7e7e7e;
+	color:#5A5B59;
+}
+.title2{
+	background-color:#7e7e7e;
+	color:#fff;
+}
+#status{
+	border-bottom:5px solid #7e7e7e;
+}
+.switcher .inner-tab:hover{
+	background-color:#7e7e7e;
+}
+.inner-tab.current{
+	background-color:#7e7e7e;
+}
+.status-sub-menu{
+	background:#7e7e7e;
+	color:#fff;
+}
+label{
+	color:#7e7e7e;
+}
+/* LIGHT-GRAY COLOR */
+.inner-tab{
+	background-color:#B8B8B8;
+}
+.paginate{
+	border-top:1px solid #B8B8B8;
+}
+
+.rightborder{
+	border-right: 1px solid #B8B8B8;
+}
+.paginate a.grayed{
+	color:#B8B8B8;
+}
+a:hover{
+	color:#B8B8B8;
+}
+
+/* LIGHTER-GRAY COLOR */
+#pagecontainer{
+	background-color:#F8FAFB;
+}
+#sub-tab #status {
+	background-color:#F8FAFB;
+}
+
+/* BLACK COLOR */
+#header{
+	background-color:#000;
+}
+#footer{
+	background-color:#000;
+}
+#page{
+	border:2px solid #000;
+}
+.paginate a{
+	color:#000;
+}
+/* RED COLOR */
+
+.error{
+	background-color:red;
+}
+.required:after{
+	color:red;
+}
+
+/* GREEN COLOR */
+.button{
+	color:#fff;
+	background-color: #5B8B23;
+}
+h1{
+	color: #5B8B23;
+}
+a{
+	color:#5B8B23;
+}
+.ltr #side-bar{
+	border-right:3px solid #5B8B23;
+}
+.rtl #side-bar{
+	border-left:3px solid #5B8B23;
+}
+.paginate a:hover{
+	color:#5B8B23;
+}
+#tabs{
+	border-bottom:10px solid #5B8B23;
+} 
+.tab.current-tab{
+	background-color: #5B8B23;
+}
+.tab:hover{
+	background-color: #5B8B23;
+	color:#fff;
+}
+
+/* LIGHT-GREEN COLOR */
+
+.button.disable, .button.disable:hover{
+	background-color:#C5E69B;
+}
+.button:hover{
+	background-color:#C5E69B;
+	color:#fff;
+}
+.tab{
+	background-color: #C5E69B;
+	color:#fff;
+}
+
+/* WHITE COLOR */
+#status li {
+	color:#fff;
+}
+.status-sub-menu a{
+	color:#fff;
+}
+#userinfo p{
+	color:#fff;
+}
+#footer, #footer a{
+	color:#fff;
+}

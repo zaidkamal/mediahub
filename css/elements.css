@@ -1,0 +1,28 @@
+label{
+	font-weight:bold;
+	display:inline-block;
+	*zoom:1;
+	text-align:right;
+	margin:5px;
+	width:95px;
+} 
+.list-style{
+	list-style:disc;
+}
+.list-style li{
+	padding:5px 20px;
+}
+p{
+	line-height:18px;
+	margin:0;
+	word-wrap: break-word;
+}
+ul{
+	list-style:none;
+}
+ul.list-style{
+	list-style-image:url(http://stereomesh.com/wp-content/themes/thedawn/images/skins/dark-green/list-style-7.png);
+	list-style-position:outside;
+	margin:0 15px;
+	padding: 0;
+}

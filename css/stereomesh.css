@@ -1,0 +1,95 @@
+#logo{
+	margin:10px;
+} 
+.ltr #userinfo{
+	text-align:right;
+	margin:4px;
+}
+.rtl #userinfo{
+	text-align:left;
+	margin:4px;
+}
+#userinfo p{
+	line-height:16px;
+	margin:0 15px;
+}
+.list{
+	height:77%;
+	margin-top:2px;
+	overflow:auto;
+}
+.ML{
+	margin-top:5px;
+}
+.movie{
+	margin-top:10px;
+	border-bottom:1px solid #bcbcbc;
+}
+
+.filter{
+	border:1px solid #bcbcbc;
+	padding:10px;
+}
+.thumb{
+	padding:8px 5px;
+	margin-top:5px;
+	width:110px;
+}
+.description{
+	margin:5px;
+	width:230px;
+	border-right:1px solid #BCBCBC;
+}
+.cat{
+	padding:5px 10px;
+	margin:5px 0;
+	width:160px;
+}
+.format{
+	padding: 5px 10px;
+	margin:5px 0;
+	width:141px;
+	border-left:1px solid #BCBCBC;	
+}
+.title{
+	margin-top: 12px;
+	font-weight:bold;
+}
+.title2{
+	padding:0 5px;
+	margin-right:5px;
+	margin-bottom:8px;
+	font-weight:bold;
+	display:inline-block;
+	*zoom:1;
+}
+.title.mt0{
+	margin-top: 0;
+}
+.mb10{
+	margin-bottom:10;
+	margin-right:5px;
+}
+.item{
+	display:none;
+	padding:0 10px;
+}
+.item li{
+	line-height:15px;
+}
+.multicontent{
+	height:100%; 
+	padding-top:5px;
+	overflow:auto;
+	margin:5px;
+}
+#multicontent-1{
+	width:150px;
+}
+#multicontent-2{
+	width:408px;
+	padding-left:20px;
+}
+#multicontent-3{
+	width:300px;
+}

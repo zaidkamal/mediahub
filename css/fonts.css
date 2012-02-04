@@ -1,0 +1,15 @@
+a{
+	font-size:11px;
+} 
+body{
+	font:normal 12px/1.7em verdana;
+}
+.fontbig{
+	font-size:14px;
+}
+.fontsmall{
+	font-size:11px;
+}
+h1{
+	font-size:14px;
+}
