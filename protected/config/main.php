@@ -33,6 +33,7 @@ return array(
       'urlFormat' => 'path',
       'showScriptName' => false,
       'rules' => array(
+        '' => 'video/index',
         'login' => 'session/create',
         'logout' => 'session/delete',
         
