@@ -19,14 +19,19 @@ return array(
   'modules' => array(),
   
   'components' => array(
-    'user'=>array(
+    'user' => array(
       'class' => 'WebUser',
       'allowAutoLogin' => true,
       'loginUrl' => array('session/create')
     ),
     
+    'request' => array(
+      'enableCsrfValidation' => true
+    ),
+    
     'urlManager' => array(
       'urlFormat' => 'path',
+      'showScriptName' => false,
       'rules' => array(
         'login' => 'session/create',
         'logout' => 'session/delete',
